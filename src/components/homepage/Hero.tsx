@@ -11,9 +11,7 @@ export const Hero: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="max-w-xl">
-          <span className="text-[#c5a363] text-xs font-semibold tracking-widest uppercase mb-4 block">
-            PRESTIGIOUS LEGAL COUNSEL
-          </span>
+          
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal leading-tight mb-6">
             Justice. Integrity. Excellence.
           </h1>

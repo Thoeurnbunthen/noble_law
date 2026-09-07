@@ -33,9 +33,7 @@ export const PracticeAreas: React.FC = () => {
   return (
     <section id="practice" className="py-20 px-6 md:px-16 bg-[#fcfbf9]">
       <div className="max-w-7xl mx-auto text-center">
-        <span className="text-[#c5a363] text-xs font-semibold tracking-widest uppercase mb-2 block">
-          EXPERTISE
-        </span>
+        
         <h2 className="font-serif text-3xl md:text-4xl text-[#0e1e38] font-normal mb-3">
           Our Primary Practice
         </h2>
