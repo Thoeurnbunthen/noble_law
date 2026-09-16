@@ -8,15 +8,15 @@ interface Partner {
 const partners: Partner[] = [
   {
     title: 'eXalt Property Company',
-    description: 'Corporate asset management, real estate acquisitions defense, and high-stakes lease mediation.',
+    description: 'A key real estate appraisal and property development. Now We are in MOU for legal consulting and drafting. ',
   },
   {
-    title: 'Banks & Institutions',
-    description: 'Consulted on strict financial system legal architectures and state litigation compliance.',
+    title: 'Banks and Financial Institutions',
+    description: 'Supporting and reviewing the contracts and security. We are the Representatives for claims, conjunction and legal enforcement at court of Cambodia. Sincerely , we have both experience and knowledge on this field.',
   },
   {
-    title: 'Businessman Network',
-    description: 'Ongoing private client wealth strategy and operational safety frameworks.',
+    title: 'Businessmen and Private Enterprises',
+    description: 'providing day-to-day legal counsel, contract drafting, litigation and application. ',
   },
 ];
 

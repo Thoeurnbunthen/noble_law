@@ -9,21 +9,21 @@ interface TeamMember {
 
 const team: TeamMember[] = [
   {
-    name: 'Arthur Noble',
+    name: 'Mr. CHHIM CHAY',
     role: 'MANAGING ATTORNEY & FOUNDER',
-    description: 'Expert in complex commercial advisory, structured acquisitions, and defense strategies.',
+    description: 'Holder of an old certificate of attorney at law from the lawyer training center of Cambodia. His experience in Criminal and Civil law since 2021. ',
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop',
   },
   {
-    name: 'Julianna Vance',
+    name: 'Mr. KITH VEASNA',
     role: 'SENIOR LEGAL ADVISER',
-    description: 'Navigates multi-national compliance, securities regulation, and structured family wealth.',
+    description: 'Hold certificate of attorney           at law from lawyer training center of Cambodia and certificate of notary. His experience of commercial and civil law ',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop',
   },
   {
-    name: 'David Sterling',
+    name: 'Ms. HANN MUYLIN',
     role: 'LEAD TRIAL ASSISTANT',
-    description: 'Specializes in pre-trial evidence analysis, deposition coordination, and high-impact courtroom research.',
+    description: 'Hold certificate of clerk and service as court clerk since 2018. Her  experience in criminal law and civil law practice since then. And now her career as                  attorney at law pursuing her skills for Commercial Compliance, Banking and Financial , real estate sectors and foreigners  legal support. ',
     image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop',
   },
 ];

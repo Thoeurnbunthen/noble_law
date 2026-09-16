@@ -8,10 +8,10 @@ export const Certifications: React.FC = () => {
         <div>
          
           <h2 className="font-serif text-3xl md:text-4xl text-[#0e1e38] font-normal mb-6 leading-tight">
-            Fully Licensed & Nationally Certified
+            Our License
           </h2>
           <p className="text-slate-600 text-xs md:text-sm leading-relaxed">
-            Noble Law Office maintains high-grade national bar certifications, specialized court-admitted credentials, and regulatory mediation clearances. We are recognized as supreme compliance protectors and strict ethical practitioners in legal circles.
+           Noble Law Office is a duly licensed and authorized legal practice, operating in full compliance with the applicable laws and regulations of Cambodia. 
           </p>
         </div>
 
@@ -20,7 +20,7 @@ export const Certifications: React.FC = () => {
           <img 
             src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=800&auto=format&fit=crop" 
             alt="Law Certification Frame" 
-            className="w-full h-[280px] md:h-[340px] object-cover"
+            className="w-full h-280px md:h-340px object-cover"
           />
         </div>
       </div>

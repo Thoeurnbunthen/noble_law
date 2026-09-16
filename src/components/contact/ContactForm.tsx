@@ -55,7 +55,7 @@ export const ContactForm: React.FC = () => {
           </label>
           <textarea
             rows={5}
-            placeholder=""
+            placeholder="your message"
             className="w-full px-4 py-2.5 text-xs bg-[#fcfbf9] border border-slate-200 rounded-sm focus:outline-none focus:border-[#c5a363] text-slate-700 placeholder-slate-400"
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
