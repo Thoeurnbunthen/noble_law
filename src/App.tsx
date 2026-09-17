@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
-import { Footer } from './components/Footer';
+
 import Home from './pages/homepage';
 import About from './pages/aboutpage';
 import Practice from './pages/practice';
