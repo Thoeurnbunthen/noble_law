@@ -1,40 +1,25 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-interface Testimonial {
-  quote: string;
-  author: string;
-  role: string;
-}
-
-const testimonials: Testimonial[] = [
-  {
-    quote: `"The firm's meticulous strategy saved our international commercial division from severe contractual penalties. Unparalleled legal acumen."`,
-    author: 'Eleanor Sterling',
-    role: 'SVP, GLOBAL MARKETS',
-  },
-  {
-    quote: `"Noble Law Office delivers legal solutions with high discretion and strategic foresight. They are truly an elite team of legal scholars."`,
-    author: 'Marcus Vance',
-    role: 'MANAGING PARTNER',
-  },
-];
+const testimonialKeys = ['eleanor', 'marcus'];
 
 export const Testimonials: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-20 px-6 md:px-16 bg-[#fcfbf9] overflow-hidden">
       <div className="max-w-7xl mx-auto text-center">
-        
+
         {/* Section Header with Fade-In Animation */}
         <div className="animate-[fadeIn_0.8s_ease-out_forwards]">
           <h2 className="font-serif text-3xl md:text-4xl text-[#0e1e38] font-normal mb-3">
-            Trusted by Visionaries
+            {t('testimonials.heading')}
           </h2>
           <div className="w-12 h-0.5 bg-[#c5a363] mx-auto mb-12 transition-all duration-500 hover:w-20"></div>
         </div>
 
         {/* Testimonials Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-          {testimonials.map((item, index) => (
+          {testimonialKeys.map((key, index) => (
             <div 
               key={index} 
               className="group relative bg-white p-8 md:p-10 rounded-sm shadow-sm border border-slate-100 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 hover:border-[#c5a363]/40 overflow-hidden"
@@ -50,16 +35,16 @@ export const Testimonials: React.FC = () => {
 
               {/* Quote Content */}
               <p className="relative z-10 text-slate-600 text-sm md:text-base leading-relaxed mb-8 italic">
-                {item.quote}
+                {t(`testimonials.items.${key}.quote`)}
               </p>
 
               {/* Author Info */}
               <div className="relative z-10 border-t border-slate-100 pt-4 transition-colors duration-300 group-hover:border-[#c5a363]/20">
                 <h4 className="font-serif text-[#0e1e38] font-bold text-sm tracking-wide">
-                  {item.author}
+                  {t(`testimonials.items.${key}.author`)}
                 </h4>
                 <p className="text-[#c5a363] text-[10px] font-semibold tracking-widest uppercase mt-0.5">
-                  {item.role}
+                  {t(`testimonials.items.${key}.role`)}
                 </p>
               </div>
             </div>

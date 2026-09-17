@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { ContactHero } from '../components/contact/ContactHero';
 import { ContactForm } from '../components/contact/ContactForm';
@@ -9,7 +8,6 @@ import { OfficeHours } from '../components/contact/OfficeHours';
 export const Contact: React.FC = () => {
   return (
     <div className="min-h-screen font-sans text-slate-800 bg-[#fcfbf9]">
-      <Navbar />
       <main>
         <ContactHero />
         <section className="py-16 px-6 md:px-16 max-w-7xl mx-auto">

@@ -1,25 +1,27 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const ContactDetails: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="space-y-8">
       {/* Contact Details */}
       <div>
         <h3 className="font-serif text-xl text-[#0e1e38] font-semibold mb-4">
-          Contact Details
+          {t('contactDetails.heading')}
         </h3>
         <ul className="space-y-3 text-xs text-slate-600">
           <li className="flex items-center space-x-3">
             <span className="text-[#c5a363]">📞</span>
-            <span>068233233</span>
+            <span>{t('contactDetails.phone')}</span>
           </li>
           <li className="flex items-center space-x-3">
             <span className="text-[#c5a363]">✉️</span>
-            <span>contact@noblelawoffice.com</span>
+            <span>{t('contactDetails.email')}</span>
           </li>
           <li className="flex items-center space-x-3">
             <span className="text-[#c5a363]">📍</span>
-            <span>100 Prestige Plaza, Suite 400, New York, NY 10001</span>
+            <span>{t('contactDetails.address')}</span>
           </li>
         </ul>
       </div>
@@ -27,10 +29,10 @@ export const ContactDetails: React.FC = () => {
       {/* Global Channels */}
       <div>
         <h4 className="font-serif text-sm text-[#0e1e38] font-semibold mb-3">
-          Our Channels
+          {t('contactDetails.channelsHeading')}
         </h4>
         <div className="flex flex-wrap gap-2 text-xs text-slate-600">
-          {['Facebook', 'Telegram', ].map((channel) => (
+          {[t('contactDetails.facebook'), t('contactDetails.telegram')].map((channel) => (
             <span
               key={channel}
               className="bg-[#f0ebe1] px-4 py-1.5 rounded-sm font-medium"
@@ -44,7 +46,7 @@ export const ContactDetails: React.FC = () => {
       {/* Coordinates Map */}
       <div>
         <span className="text-[#c5a363] text-[10px] font-semibold tracking-widest uppercase mb-2 block">
-          Google Map
+          {t('contactDetails.mapLabel')}
         </span>
         <div className="rounded-sm overflow-hidden border border-slate-200 shadow-sm">
           <img
