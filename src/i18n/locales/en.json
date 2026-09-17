@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "practice": "Practice",
+    "contact": "Contact",
+    "brandName": "NOBLE",
+    "brandSub": "LAW OFFICE"
+  },
+  "language": {
+    "english": "English",
+    "khmer": "ភាសាខ្មែរ"
+  },
+  "footer": {
+    "brand": "Noble Law Office",
+    "description": "Upholding justice with unwavering integrity and prestigious excellence. Your premier partner in navigating complex legal terrain.",
+    "practiceHeading": "Practice",
+    "practiceLinks": {
+      "commercial": "Commercial & Investment Law",
+      "compliance": "Legal Compliance",
+      "litigation": "Civil & Criminal Litigation",
+      "enforcement": "Legal Enforcement"
+    },
+    "contactHeading": "Get In Touch",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "locationLabel": "Location",
+    "location": "100 Prestige Plaza, Suite 400, NY",
+    "copyright": "© 2026 Noble Law Office. All Rights Reserved. Legal Notice.",
+    "facebook": "Facebook",
+    "telegram": "Telegram"
+  },
+  "hero": {
+    "heading": "Justice. Integrity. Excellence.",
+    "subtitle": "Noble Law Office stands as a trusted fortress of legal clarity and supreme strategy. We empower legacy-defining moves and defend with absolute rigor.",
+    "contactUs": "Contact Us",
+    "exploreHistory": "Explore History"
+  },
+  "practiceAreas": {
+    "heading": "Our Primary Practice",
+    "items": {
+      "commercial": {
+        "title": "Commercial & Investment",
+        "description": "Comprehensive advisory on venture structures, cross-border investments, mergers, and corporate security."
+      },
+      "compliance": {
+        "title": "Legal Compliance",
+        "description": "Robust frameworks aligning your enterprise operations with local laws, environmental regulations, and corporate ethics."
+      },
+      "litigation": {
+        "title": "Civil & Criminal Litigation",
+        "description": "Uncompromising courtroom representation from defense strategies to high-profile dispute resolutions."
+      },
+      "enforcement": {
+        "title": "Legal Enforcement",
+        "description": "Direct legal execution and strategic defense to guard corporate IP, brand integrity, and operational licenses."
+      }
+    }
+  },
+  "aboutSection": {
+    "eyebrow": "LEGACY OF DEFENSE",
+    "heading": "A Mission Driven by Precision and Truth",
+    "description": "For generations, Noble Law Office has preserved wealth, solved corporate gridlocks, and represented pioneers with rigorous diligence. Our focus never strays from the highest legal standards and personalized attention for every client.",
+    "learnMore": "Learn More About Our Team"
+  },
+  "testimonials": {
+    "heading": "Trusted by Visionaries",
+    "items": {
+      "eleanor": {
+        "quote": "\"The firm's meticulous strategy saved our international commercial division from severe contractual penalties. Unparalleled legal acumen.\"",
+        "author": "Eleanor Sterling",
+        "role": "SVP, GLOBAL MARKETS"
+      },
+      "marcus": {
+        "quote": "\"Noble Law Office delivers legal solutions with high discretion and strategic foresight. They are truly an elite team of legal scholars.\"",
+        "author": "Marcus Vance",
+        "role": "MANAGING PARTNER"
+      }
+    }
+  },
+  "aboutHero": {
+    "heading": "About Noble Law Office"
+  },
+  "team": {
+    "heading": "Our Prime Resources",
+    "members": {
+      "chhimChay": {
+        "name": "Mr. CHHIM CHAY",
+        "role": "MANAGING ATTORNEY & FOUNDER",
+        "description": "Holder of an old certificate of attorney at law from the lawyer training center of Cambodia. His experience in Criminal and Civil law since 2021."
+      },
+      "kithVeasna": {
+        "name": "Mr. KITH VEASNA",
+        "role": "SENIOR LEGAL ADVISER",
+        "description": "Hold certificate of attorney at law from lawyer training center of Cambodia and certificate of notary. His experience of commercial and civil law"
+      },
+      "hannMuylin": {
+        "name": "Ms. HANN MUYLIN",
+        "role": "LEAD TRIAL ASSISTANT",
+        "description": "Hold certificate of clerk and service as court clerk since 2018. Her experience in criminal law and civil law practice since then. And now her career as attorney at law pursuing her skills for Commercial Compliance, Banking and Financial, real estate sectors and foreigners legal support."
+      }
+    }
+  },
+  "certifications": {
+    "heading": "Our License",
+    "description": "Noble Law Office is a duly licensed and authorized legal practice, operating in full compliance with the applicable laws and regulations of Cambodia."
+  },
+  "partners": {
+    "heading": "Our Partners & Clients",
+    "items": {
+      "exalt": {
+        "title": "eXalt Property Company",
+        "description": "A key real estate appraisal and property development. Now We are in MOU for legal consulting and drafting."
+      },
+      "banks": {
+        "title": "Banks and Financial Institutions",
+        "description": "Supporting and reviewing the contracts and security. We are the Representatives for claims, conjunction and legal enforcement at court of Cambodia. Sincerely, we have both experience and knowledge on this field."
+      },
+      "businessmen": {
+        "title": "Businessmen and Private Enterprises",
+        "description": "providing day-to-day legal counsel, contract drafting, litigation and application."
+      }
+    }
+  },
+  "contactHero": {
+    "heading": "Get In Touch"
+  },
+  "contactForm": {
+    "heading": "Contact From",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "your name",
+    "email": "Email",
+    "emailPlaceholder": "your gmail",
+    "message": "Message",
+    "messagePlaceholder": "your message",
+    "submit": "Submit",
+    "successMessage": "Request submitted successfully."
+  },
+  "contactDetails": {
+    "heading": "Contact Details",
+    "phone": "068233233",
+    "email": "contact@noblelawoffice.com",
+    "address": "100 Prestige Plaza, Suite 400, New York, NY 10001",
+    "channelsHeading": "Our Channels",
+    "facebook": "Facebook",
+    "telegram": "Telegram",
+    "mapLabel": "Google Map"
+  },
+  "officeHours": {
+    "heading": "Office Hours",
+    "weekdaysLabel": "Monday - Friday:",
+    "weekdaysValue": "08:00 AM - 05:00 PM",
+    "saturdayLabel": "Saturday:",
+    "saturdayValue": "By Pre-appointment only",
+    "sundayLabel": "Sunday:",
+    "sundayValue": "Closed"
+  },
+  "practiceHero": {
+    "heading": "Our Practice"
+  },
+  "practiceList": {
+    "items": {
+      "compliance": {
+        "title": "Commercial & Investment Law Compliance",
+        "description": "Registering the company, setting up the governance and employment. protecting your IPs, franchise, and assets. Preparing the Agreement and transferring share. Applying for EIA and other permits."
+      },
+      "litigation": {
+        "title": "Civil and Criminal litigation",
+        "description": "In criminal proceedings, We have defense attorneys at law to protect your rights in the investigation process and criminal court proceedings. You have rights to remain silent and right to defend yourself or right to bail. However, we can also in charge the plaintiff to claim the damages and compensation from the offender in the proceeding. In civil court, there are claims and actions such as to divide testaments, to compensate damages of contracts, and tort, to return the property and assets to resolve for bankruptcy and insolvency, to settle family disputes, to recover unjust enrichment and to pay the debt."
+      },
+      "enforcement": {
+        "title": "Legal Enforcement",
+        "description": "The way the creditors or banks can collect the debt by applying to the court to ensure the payment back. Or the way the owner to apply for return back the property. The procedure is completely complicated that banks, creditors or owners should select the competent and experienced to represent and consult for legal enforcement."
+      },
+      "injunction": {
+        "title": "Injunction",
+        "description": "We represent the client to apply for injunction to court in order to intervene during lawsuit. Or we can represent to counterclaim. It is the way court can intervene immediately to protect interest and property during litigation proceedings. Without the injunction, property or interest can be transferred or disposed. And it will hard to enforce by law or cannot enforce after litigation proceedings finalized."
+      }
+    }
+  },
+  "practiceCTA": {
+    "heading": "Need Supreme Legal Counsel?",
+    "subtitle": "Speak with Arthur Noble and our senior advisory panel today.",
+    "button": "CONTACT US TODAY"
+  }
+}

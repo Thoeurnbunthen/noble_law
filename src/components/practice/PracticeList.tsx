@@ -1,40 +1,37 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface PracticeDetail {
   number: string;
-  title: string;
-  description: string;
+  key: string;
   image: string;
 }
 
 const practices: PracticeDetail[] = [
   {
     number: '01',
-    title: 'Commercial & Investment Law Compliance',
-    description: 'Registering the company, setting up the governance and employment. protecting your IPs , franchise, and assets. Preparing the Agreement and transferring share. Applying for EIA and other permits.',
+    key: 'compliance',
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop',
   },
   {
     number: '02',
-    title: 'Civil and Criminal litigation ',
-    description: 'In criminal proceedings, We have defense attorneys at law to protect your rights in the investigation process and criminal court proceedings. You have rights to remain silent and right to defend yourself  or right to bail . However, we can also  in charge the plaintiff to claim the damages and compensation from the offender in the proceeding. In civil court, there are claims and actions such as to divide testaments, to compensate damages of contracts . and tort , to return the property and assets to resolve for bankruptcy and insolvency , to settle family disputes , to recover unjust enrichment and to to pay the debt. ',
+    key: 'litigation',
     image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=800&auto=format&fit=crop',
   },
   {
     number: '03',
-    title: 'Legal Enforcement',
-    description: 'The way the creditors or banks can collect the debt by applying to the court to ensure the payment back. Or the way the owner to apply for return back the property. The procedure is completely complicated that banks, creditors or owners should select the competent and experienced to represent and consult for legal enforcement.  ',
+    key: 'enforcement',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop',
   },
   {
     number: '04',
-    title: 'Injunction',
-    description: 'We represent the client to apply for injunction to court in order to intervene during lawsuit. Or we can represent to counterclaim. It is the way court can intervene immediately to protect interest and property during litigation proceedings. Without the injunction, property or interest can be transferred or disposed . And it will hard to enforce by law or cannot enforce after litigation proceedings finalized. ',
+    key: 'injunction',
     image: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=800&auto=format&fit=crop',
   },
 ];
 
 export const PracticeList: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-20 px-6 md:px-16 bg-[#fcfbf9]">
       <div className="max-w-7xl mx-auto space-y-24">
@@ -52,19 +49,19 @@ export const PracticeList: React.FC = () => {
                   <div className="w-8 h-1px bg-[#c5a363]"></div>
                 </div>
                 <h2 className="font-serif text-2xl md:text-3xl text-[#0e1e38] font-semibold mb-4">
-                  {item.title}
+                  {t(`practiceList.items.${item.key}.title`)}
                 </h2>
                 <p className="text-slate-600 text-xs md:text-sm leading-relaxed">
-                  {item.description}
+                  {t(`practiceList.items.${item.key}.description`)}
                 </p>
               </div>
 
               {/* Image Side */}
               <div className="flex-1 w-full">
                 <div className="rounded-sm overflow-hidden shadow-sm border border-slate-100">
-                  <img 
-                    src={item.image} 
-                    alt={item.title} 
+                  <img
+                    src={item.image}
+                    alt={t(`practiceList.items.${item.key}.title`)}
                     className="w-full h-260px md:h-320px object-cover"
                   />
                 </div>

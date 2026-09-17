@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const AboutSection: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section id="about" className="py-20 px-6 md:px-16 bg-[#f4f1eb]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -16,19 +18,19 @@ export const AboutSection: React.FC = () => {
         {/* Right Content */}
         <div>
           <span className="text-[#c5a363] text-xs font-semibold tracking-widest uppercase mb-3 block">
-            LEGACY OF DEFENSE
+            {t('aboutSection.eyebrow')}
           </span>
           <h2 className="font-serif text-3xl md:text-4xl text-[#0e1e38] font-normal mb-6 leading-tight">
-            A Mission Driven by Precision and Truth
+            {t('aboutSection.heading')}
           </h2>
           <p className="text-slate-600 text-xs md:text-sm leading-relaxed mb-6">
-            For generations, Noble Law Office has preserved wealth, solved corporate gridlocks, and represented pioneers with rigorous diligence. Our focus never strays from the highest legal standards and personalized attention for every client.
+            {t('aboutSection.description')}
           </p>
-          <a 
-            href="#about" 
+          <a
+            href="#about"
             className="inline-flex items-center text-[#0e1e38] font-semibold text-xs tracking-wider uppercase hover:text-[#c5a363] transition group"
           >
-            Learn More About Our Team 
+            {t('aboutSection.learnMore')}
             <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
           </a>
         </div>
