@@ -1,8 +1,21 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+// Opens in the Google Maps app / site when the map or the link is clicked.
+const MAP_LINK = 'https://maps.app.goo.gl/36DWu2zZ8TCu4gJ69?g_st=it';
+
+// Paste the `src` URL from Google Maps > Share > Embed a map here (it starts with
+// https://www.google.com/maps/embed?pb=...). Short links like maps.app.goo.gl cannot be shown
+// inside an iframe. While this is empty, the map is centered on the translated address instead.
+const MAP_EMBED_URL =
+  'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3908.3122773745145!2d104.92886287505414!3d11.601071188602317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDM2JzAzLjkiTiAxMDTCsDU1JzUzLjIiRQ!5e0!3m2!1sen!2skh!4v1789805869423!5m2!1sen!2skh';
+
 export const ContactDetails: React.FC = () => {
   const { t } = useTranslation();
+  // Real Google Map, centered on the translated address. Opens the full Google Maps app via MAP_LINK.
+  const mapEmbedSrc =
+    MAP_EMBED_URL ||
+    `https://www.google.com/maps?q=${encodeURIComponent(t('contactDetails.address'))}&output=embed`;
   return (
     <div className="space-y-8">
       {/* Contact Details */}
@@ -48,13 +61,32 @@ export const ContactDetails: React.FC = () => {
         <span className="text-[#c5a363] text-[10px] font-semibold tracking-widest uppercase mb-2 block">
           {t('contactDetails.mapLabel')}
         </span>
-        <div className="rounded-sm overflow-hidden border border-slate-200 shadow-sm">
-          <img
-            src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=800&auto=format&fit=crop"
-            alt="Old World Map"
-            className="w-full h-44 object-cover"
+        <div className="relative rounded-sm overflow-hidden border border-slate-200 shadow-sm">
+          <iframe
+            title="Google Map"
+            src={mapEmbedSrc}
+            className="w-full h-44 border-0 block"
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+          {/* Transparent overlay: clicking the map opens your Google Maps link */}
+          <a
+            href={MAP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t('contactDetails.openInMaps', 'Open in Google Maps')}
+            className="absolute inset-0"
           />
         </div>
+        <a
+          href={MAP_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-2 text-xs font-semibold text-[#0e1e38] hover:text-[#c5a363] transition duration-200"
+        >
+         
+        </a>
       </div>
     </div>
   );

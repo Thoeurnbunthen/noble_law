@@ -17,7 +17,7 @@ export const Navbar: React.FC = () => {
 
   const LanguageButtonContent = () => (
     <>
-      <span className="text-base leading-none">{isKhmer ? '🇰🇭' : '🇬🇧'}</span>
+      <span className="text-base leading-none">{isKhmer ? '' : ''}</span>
       <span className="truncate">{isKhmer ? t('language.khmer') : t('language.english')}</span>
     </>
   );
@@ -87,7 +87,7 @@ export const Navbar: React.FC = () => {
             aria-label="Switch language"
             className="bg-[#c5a363] hover:bg-[#b39152] text-[#0e1e38] font-bold text-xs px-3 py-2 transition flex items-center justify-center space-x-1 rounded-sm shrink-0"
           >
-            <span className="text-base leading-none">{isKhmer ? '🇰🇭' : '🇬🇧'}</span>
+            <span className="text-base leading-none">{isKhmer ? '' : ''}</span>
             <span>{isKhmer ? 'ខ្មែរ' : 'EN'}</span>
           </button>
 

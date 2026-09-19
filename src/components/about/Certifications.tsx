@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import image from '../../assets/image.png';
 
 export const Certifications: React.FC = () => {
   const { t } = useTranslation();
@@ -20,7 +21,7 @@ export const Certifications: React.FC = () => {
         {/* Right Frame Image */}
         <div className="rounded-sm overflow-hidden shadow-md">
           <img 
-            src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=800&auto=format&fit=crop" 
+            src={image} 
             alt="Law Certification Frame" 
             className="w-full h-280px md:h-340px object-cover"
           />

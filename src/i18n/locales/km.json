@@ -25,7 +25,7 @@
     "phoneLabel": "ទូរស័ព្ទ",
     "emailLabel": "អ៊ីមែល",
     "locationLabel": "ទីតាំង",
-    "location": "100 Prestige Plaza, Suite 400, NY",
+    "location": "ផ្លូវជាតិលេខ 6A ភូមិគៀនឃ្លាំង សង្កាត់ជ្រោយចង្វារ ខណ្ឌជ្រោយចង្វារ រាជធានីភ្នំពេញ",
     "copyright": "© ២០២៦ ការិយាល័យមេធាវី Noble Law។ រក្សាសិទ្ធិគ្រប់យ៉ាង។ សេចក្តីជូនដំណឹងផ្លូវច្បាប់។",
     "facebook": "ហ្វេសប៊ុក",
     "telegram": "តេឡេក្រាម"
@@ -130,7 +130,7 @@
     "fullName": "ឈ្មោះពេញ",
     "fullNamePlaceholder": "ឈ្មោះរបស់អ្នក",
     "email": "អ៊ីមែល",
-    "emailPlaceholder": "gmail របស់អ្នក",
+    "emailPlaceholder": "អ៊ីមែលរបស់អ្នក",
     "message": "សារ",
     "messagePlaceholder": "សាររបស់អ្នក",
     "submit": "ដាក់ស្នើ",
@@ -140,11 +140,11 @@
     "heading": "ព័ត៌មានទំនាក់ទំនង",
     "phone": "068233233",
     "email": "contact@noblelawoffice.com",
-    "address": "100 Prestige Plaza, Suite 400, New York, NY 10001",
+    "address": "ផ្លូវជាតិលេខ 6A ភូមិគៀនឃ្លាំង សង្កាត់ជ្រោយចង្វារ ខណ្ឌជ្រោយចង្វារ រាជធានីភ្នំពេញ",
     "channelsHeading": "បណ្តាញរបស់យើង",
     "facebook": "ហ្វេសប៊ុក",
     "telegram": "តេឡេក្រាម",
-    "mapLabel": "ផែនទីហ្គូហ្គល"
+    "mapLabel": "ផែនទី"
   },
   "officeHours": {
     "heading": "ម៉ោងធ្វើការ",

@@ -11,16 +11,16 @@ import 'tinymce/plugins/link';
 import 'tinymce/plugins/autoresize';
 // Safe to load globally: these only contain `.tox-*` prefixed selectors (TinyMCE's own UI chrome).
 import 'tinymce/skins/ui/oxide/skin.css';
-import 'tinymce/skins/ui/oxide/content.css';
 // NOT safe to load globally: this file has a bare `body { margin: 1rem }` rule meant for the
 // editor's own iframe document. Pull it in as a raw string (`?inline`) and hand it to TinyMCE via
 // `content_style` so it only ever gets injected inside that iframe, never into the page's <body>.
+import oxideContentCss from 'tinymce/skins/ui/oxide/content.css?inline';
 import editorContentCss from 'tinymce/skins/content/default/content.css?inline';
 
 const CONTACT_EMAIL = 'contact@noblelawoffice.com';
 
 export const ContactForm: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -79,6 +79,7 @@ export const ContactForm: React.FC = () => {
             {t('contactForm.message')}
           </label>
           <Editor
+            key={i18n.language}
             licenseKey="gpl"
             value={formData.message}
             onEditorChange={(content) => setFormData({ ...formData, message: content })}
@@ -88,9 +89,9 @@ export const ContactForm: React.FC = () => {
               statusbar: false,
               branding: false,
               skin: false,
-              content_style: editorContentCss,
+              content_style: `${oxideContentCss}\n${editorContentCss}\nbody { font-size: 12px; }`,
               plugins: 'lists link autoresize',
-              toolbar: 'bold italic underline | bullist numlist | link',
+              toolbar: false,
               placeholder: t('contactForm.messagePlaceholder'),
               autoresize_bottom_margin: 16,
             }}
