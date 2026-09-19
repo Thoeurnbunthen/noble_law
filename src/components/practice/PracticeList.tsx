@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Reveal } from '../shared/Reveal';
 
 interface PracticeDetail {
   number: string;
@@ -33,14 +34,18 @@ const practices: PracticeDetail[] = [
 export const PracticeList: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <section className="py-20 px-6 md:px-16 bg-[#fcfbf9]">
+    <section className="py-20 px-6 md:px-16 bg-[#fcfbf9] overflow-hidden">
       <div className="max-w-7xl mx-auto space-y-24">
         {practices.map((item, index) => {
           const isEven = index % 2 === 0;
           return (
-            <div 
-              key={index} 
-              className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12`}
+            <Reveal
+              as="div"
+              key={index}
+              variant={isEven ? 'slide-left' : 'slide-right'}
+              threshold={0.2}
+              once={false}
+              className={`group flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12`}
             >
               {/* Text Side */}
               <div className="flex-1">
@@ -62,11 +67,11 @@ export const PracticeList: React.FC = () => {
                   <img
                     src={item.image}
                     alt={t(`practiceList.items.${item.key}.title`)}
-                    className="w-full h-260px md:h-320px object-cover"
+                    className="w-full h-260px md:h-320px object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
               </div>
-            </div>
+            </Reveal>
           );
         })}
       </div>

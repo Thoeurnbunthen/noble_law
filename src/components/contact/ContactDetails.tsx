@@ -1,5 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
+import { FaFacebook, FaTelegram } from 'react-icons/fa';
+import { Reveal } from '../shared/Reveal';
 
 // Opens in the Google Maps app / site when the map or the link is clicked.
 const MAP_LINK = 'https://maps.app.goo.gl/36DWu2zZ8TCu4gJ69?g_st=it';
@@ -17,7 +20,7 @@ export const ContactDetails: React.FC = () => {
     MAP_EMBED_URL ||
     `https://www.google.com/maps?q=${encodeURIComponent(t('contactDetails.address'))}&output=embed`;
   return (
-    <div className="space-y-8">
+    <Reveal as="div" delay={100} once={false} className="space-y-8">
       {/* Contact Details */}
       <div>
         <h3 className="font-serif text-xl text-[#0e1e38] font-semibold mb-4">
@@ -25,15 +28,15 @@ export const ContactDetails: React.FC = () => {
         </h3>
         <ul className="space-y-3 text-xs text-slate-600">
           <li className="flex items-center space-x-3">
-            <span className="text-[#c5a363]">📞</span>
+            <FiPhone className="text-[#c5a363] shrink-0" size={16} />
             <span>{t('contactDetails.phone')}</span>
           </li>
           <li className="flex items-center space-x-3">
-            <span className="text-[#c5a363]">✉️</span>
+            <FiMail className="text-[#c5a363] shrink-0" size={16} />
             <span>{t('contactDetails.email')}</span>
           </li>
           <li className="flex items-center space-x-3">
-            <span className="text-[#c5a363]">📍</span>
+            <FiMapPin className="text-[#c5a363] shrink-0" size={16} />
             <span>{t('contactDetails.address')}</span>
           </li>
         </ul>
@@ -45,12 +48,16 @@ export const ContactDetails: React.FC = () => {
           {t('contactDetails.channelsHeading')}
         </h4>
         <div className="flex flex-wrap gap-2 text-xs text-slate-600">
-          {[t('contactDetails.facebook'), t('contactDetails.telegram')].map((channel) => (
+          {[
+            { label: t('contactDetails.facebook'), Icon: FaFacebook },
+            { label: t('contactDetails.telegram'), Icon: FaTelegram },
+          ].map(({ label, Icon }) => (
             <span
-              key={channel}
-              className="bg-[#f0ebe1] px-4 py-1.5 rounded-sm font-medium"
+              key={label}
+              className="flex items-center space-x-1.5 bg-[#f0ebe1] px-4 py-1.5 rounded-sm font-medium"
             >
-              {channel}
+              <Icon className="text-[#c5a363]" size={14} />
+              <span>{label}</span>
             </span>
           ))}
         </div>
@@ -88,6 +95,6 @@ export const ContactDetails: React.FC = () => {
          
         </a>
       </div>
-    </div>
+    </Reveal>
   );
 };

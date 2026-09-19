@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Reveal } from '../shared/Reveal';
 
 export const Hero: React.FC = () => {
   const { t } = useTranslation();
@@ -24,17 +25,17 @@ export const Hero: React.FC = () => {
         <div className="max-w-xl">
           
           {/* Main Heading */}
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal leading-tight mb-6 animate-[fadeInUp_0.8s_ease-out_forwards]">
+          <Reveal as="h1" trigger="mount" delay={0} className="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal leading-tight mb-6">
             {t('hero.heading')}
-          </h1>
+          </Reveal>
 
           {/* Subtitle */}
-          <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-8 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.2s_forwards]">
+          <Reveal as="p" trigger="mount" delay={200} className="text-slate-300 text-sm md:text-base leading-relaxed mb-8">
             {t('hero.subtitle')}
-          </p>
+          </Reveal>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards]">
+          <Reveal as="div" trigger="mount" delay={400} className="flex flex-col sm:flex-row gap-4">
             {/* Navigates to /contact */}
             <Link
               to="/contact"
@@ -50,24 +51,10 @@ export const Hero: React.FC = () => {
             >
               {t('hero.exploreHistory')}
             </Link>
-          </div>
+          </Reveal>
 
         </div>
       </div>
-
-      {/* CSS Keyframe Style Injection */}
-      <style>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(24px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
     </section>
   );
 };
