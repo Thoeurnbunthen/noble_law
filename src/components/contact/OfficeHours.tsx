@@ -1,10 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Reveal } from '../shared/Reveal';
 
 export const OfficeHours: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <div className="bg-[#f4efe6] p-6 rounded-sm mt-6">
+    <Reveal as="div" delay={180} once={false} className="bg-[#f4efe6] p-6 rounded-sm mt-6">
       <h3 className="font-serif text-lg text-[#0e1e38] font-semibold mb-3">
         {t('officeHours.heading')}
       </h3>
@@ -19,6 +20,6 @@ export const OfficeHours: React.FC = () => {
           <span className="font-medium text-slate-700">{t('officeHours.sundayLabel')}</span> {t('officeHours.sundayValue')}
         </p>
       </div>
-    </div>
+    </Reveal>
   );
 };

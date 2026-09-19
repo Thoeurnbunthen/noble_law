@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Editor } from '@tinymce/tinymce-react';
+import { Reveal } from '../shared/Reveal';
 
 import 'tinymce/tinymce';
 import 'tinymce/models/dom/model';
@@ -39,7 +40,7 @@ export const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="bg-white p-8 md:p-10 rounded-sm shadow-sm border border-slate-100">
+    <Reveal as="div" threshold={0.05} once={false} className="bg-white p-8 md:p-10 rounded-sm shadow-sm border border-slate-100">
       <h2 className="font-serif text-2xl text-[#0e1e38] font-semibold mb-6">
         {t('contactForm.heading')}
       </h2>
@@ -104,6 +105,6 @@ export const ContactForm: React.FC = () => {
           {t('contactForm.submit')}
         </button>
       </form>
-    </div>
+    </Reveal>
   );
 };

@@ -14,16 +14,12 @@
   "footer": {
     "brand": "Noble Law Office",
     "description": "Upholding justice with unwavering integrity and prestigious excellence. Your premier partner in navigating complex legal terrain.",
-    "practiceHeading": "Practice",
-    "practiceLinks": {
-      "commercial": "Commercial & Investment Law",
-      "compliance": "Legal Compliance",
-      "litigation": "Civil & Criminal Litigation",
-      "enforcement": "Legal Enforcement"
-    },
+    "pagesHeading": "Pages",
     "contactHeading": "Get In Touch",
     "phoneLabel": "Phone",
+    "phone": "068233233",
     "emailLabel": "Email",
+    "email": "contact@noblelawoffice.com",
     "locationLabel": "Location",
     "location": "100 Prestige Plaza, Suite 400, NY",
     "copyright": "© 2026 Noble Law Office. All Rights Reserved. Legal Notice.",

@@ -1,12 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import logo from '../assets/logo2.png';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const { t, i18n } = useTranslation();
   const location = useLocation();
+
+  useEffect(() => {
+    let ticking = false;
+    const handleScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        setIsScrolled(window.scrollY > 40);
+        ticking = false;
+      });
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const isActive = (path: string) => location.pathname === path;
   const isKhmer = i18n.language === 'km';
@@ -23,7 +38,11 @@ export const Navbar: React.FC = () => {
   );
 
   return (
-    <nav className="bg-[#0e1e38] text-white px-6 md:px-16 py-2 fixed top-0 left-0 right-0 z-50 shadow-md">
+    <nav
+      className={`bg-[#0e1e38] text-white px-6 md:px-16 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'py-1 shadow-lg' : 'py-2 shadow-md'
+      }`}
+    >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
 
         {/* Logo Link to Home */}

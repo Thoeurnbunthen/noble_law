@@ -14,16 +14,12 @@
   "footer": {
     "brand": "ការិយាល័យមេធាវី Noble Law",
     "description": "ការពារយុត្តិធម៌ដោយភាពស្មោះត្រង់ និងឧត្តមភាពដ៏មានកិត្យានុភាព។ ដៃគូជាន់ខ្ពស់របស់លោកអ្នកក្នុងការដោះស្រាយបញ្ហាផ្នែកច្បាប់ស្មុគស្មាញ។",
-    "practiceHeading": "សេវាកម្ម",
-    "practiceLinks": {
-      "commercial": "ច្បាប់ពាណិជ្ជកម្ម និងវិនិយោគ",
-      "compliance": "ការអនុលោមតាមច្បាប់",
-      "litigation": "ក្តីរដ្ឋប្បវេណី និងព្រហ្មទណ្ឌ",
-      "enforcement": "ការអនុវត្តច្បាប់"
-    },
+    "pagesHeading": "ទំព័រ",
     "contactHeading": "ទាក់ទងមកយើង",
     "phoneLabel": "ទូរស័ព្ទ",
+    "phone": "068233233",
     "emailLabel": "អ៊ីមែល",
+    "email": "contact@noblelawoffice.com",
     "locationLabel": "ទីតាំង",
     "location": "100 Prestige Plaza, Suite 400, NY",
     "copyright": "© ២០២៦ ការិយាល័យមេធាវី Noble Law។ រក្សាសិទ្ធិគ្រប់យ៉ាង។ សេចក្តីជូនដំណឹងផ្លូវច្បាប់។",
