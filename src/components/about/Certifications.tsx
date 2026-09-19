@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Reveal } from '../shared/Reveal';
-import image from '../../assets/image.png';
 
 export const Certifications: React.FC = () => {
   const { t } = useTranslation();
