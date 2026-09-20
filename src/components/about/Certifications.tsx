@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Reveal } from '../shared/Reveal';
+import frameImage from '../../assets/image.png'; // Ensure you have an image for the frame
 
 export const Certifications: React.FC = () => {
   const { t } = useTranslation();
@@ -21,7 +22,7 @@ export const Certifications: React.FC = () => {
         {/* Right Frame Image */}
         <Reveal as="div" variant="slide-right" once={false} className="overflow-hidden rounded-sm shadow-md">
           <img
-            src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=800&auto=format&fit=crop"
+            src={frameImage}
             alt="Law Certification Frame"
             className="w-full h-280px md:h-340px object-cover transition-transform duration-500 hover:scale-110"
           />
