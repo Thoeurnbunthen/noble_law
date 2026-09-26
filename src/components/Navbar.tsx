@@ -62,15 +62,10 @@ export const Navbar: React.FC = () => {
 
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex items-center space-x-8 text-sm font-medium">
-          <Link
-            to="/"
-            className={`${isActive('/') ? 'text-white border-b-2 border-[#c5a363] pb-1' : 'text-slate-300 hover:text-white'} transition`}
-          >
-            {t('nav.home')}
-          </Link>
+        
           <Link
             to="/about"
-            className={`${isActive('/about') ? 'text-white border-b-2 border-[#c5a363] pb-1' : 'text-slate-300 hover:text-white'} transition`}
+            className={`${isActive('/') ? 'text-white border-b-2 border-[#c5a363] pb-1' : 'text-slate-300 hover:text-white'} transition`}
           >
             {t('nav.about')}
           </Link>
@@ -128,17 +123,11 @@ export const Navbar: React.FC = () => {
       {/* Mobile Menu Dropdown Links */}
       {isOpen && (
         <div className="md:hidden mt-4 pt-4 border-t border-slate-700 flex flex-col space-y-4 text-sm font-medium">
-          <Link
-            to="/"
-            onClick={() => setIsOpen(false)}
-            className={isActive('/') ? 'text-white font-semibold' : 'text-slate-300'}
-          >
-            {t('nav.home')}
-          </Link>
+         
           <Link
             to="/about"
             onClick={() => setIsOpen(false)}
-            className={isActive('/about') ? 'text-white font-semibold' : 'text-slate-300'}
+            className={isActive('/') ? 'text-white font-semibold' : 'text-slate-300'}
           >
             {t('nav.about')}
           </Link>

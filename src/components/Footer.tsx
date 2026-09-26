@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
               {t('footer.pagesHeading')}
             </h4>
             <ul className="space-y-2.5">
-              <li><Link to="/" className="hover:text-white transition">{t('nav.home')}</Link></li>
+             
               <li><Link to="/about" className="hover:text-white transition">{t('nav.about')}</Link></li>
               <li><Link to="/practice" className="hover:text-white transition">{t('nav.practice')}</Link></li>
               <li><Link to="/contact" className="hover:text-white transition">{t('nav.contact')}</Link></li>
